@@ -1,0 +1,406 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Help System &mdash; Blender Manual</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  
+  
+  
+    <link rel="canonical" href="https://docs.blender.org/manual/en/latest/getting_started/help.html"/>
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/js/version_switch.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="search" type="application/opensearchdescription+xml"
+          title="Search within Blender Manual"
+          href="../_static/opensearch.xml"/>
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme_overrides.css" type="text/css" />
+    <link rel="alternate" hreflang="en" href="https://docs.blender.org/manual/en/latest/">
+    <link rel="alternate" hreflang="de" href="https://docs.blender.org/manual/de/latest/">
+    <link rel="alternate" hreflang="es" href="https://docs.blender.org/manual/es/latest/">
+    <link rel="alternate" hreflang="fi" href="https://docs.blender.org/manual/fi/latest/">
+    <link rel="alternate" hreflang="fr" href="https://docs.blender.org/manual/fr/latest/">
+    <link rel="alternate" hreflang="it" href="https://docs.blender.org/manual/it/latest/">
+    <link rel="alternate" hreflang="ja" href="https://docs.blender.org/manual/ja/latest/">
+    <link rel="alternate" hreflang="ko" href="https://docs.blender.org/manual/ko/latest/">
+    <link rel="alternate" hreflang="nb" href="https://docs.blender.org/manual/nb/latest/">
+    <link rel="alternate" hreflang="pt" href="https://docs.blender.org/manual/pt/latest/">
+    <link rel="alternate" hreflang="ru" href="https://docs.blender.org/manual/ru/latest/">
+    <link rel="alternate" hreflang="sl" href="https://docs.blender.org/manual/sl/latest/">
+    <link rel="alternate" hreflang="sr" href="https://docs.blender.org/manual/sr/latest/">
+    <link rel="alternate" hreflang="uk" href="https://docs.blender.org/manual/uk/latest/">
+    <link rel="alternate" hreflang="vi" href="https://docs.blender.org/manual/vi/latest/">
+    <link rel="alternate" hreflang="zh-Hans" href="https://docs.blender.org/manual/zh-hans/latest/">
+    <link rel="alternate" hreflang="zh-Hant" href="https://docs.blender.org/manual/zh-hant/latest/">
+    <link rel="alternate" hreflang="x-default" href="https://docs.blender.org/manual/en/latest/">
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="User Interface" href="../interface/index.html" />
+    <link rel="prev" title="Defaults" href="configuration/defaults.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Blender 2.80 Manual
+          
+
+          
+            
+            <img src="../_static/blender-logo.svg" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Getting Started</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="about/index.html">About Blender</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installing/index.html">Installing Blender</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configuration/index.html">Configuring Blender</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Help System</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#tooltips">Tooltips</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#elements">Elements</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#context-sensitive-manual-access">Context-Sensitive Manual Access</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#help-menu">Help Menu</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#web-links">Web Links</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#save-system-info">Save System Info</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../interface/index.html">User Interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../editors/index.html">Editors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../scene_layout/index.html">Scenes &amp; Objects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modeling/index.html">Modeling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sculpt_paint/index.html">Sculpting &amp; Painting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../grease_pencil/index.html">Grease Pencil</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../animation/index.html">Animation &amp; Rigging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../physics/index.html">Physics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../render/index.html">Rendering</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../compositing/index.html">Compositing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../movie_clip/index.html">Tracking &amp; Masking</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../video_editing/index.html">Video Editing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../files/index.html">Files &amp; Data System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../addons/index.html">Add-ons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../advanced/index.html">Advanced</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/index.html">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../glossary/index.html">Glossary</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../about/index.html">About this Manual</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Blender 2.80 Manual</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">Getting Started</a> &raquo;</li>
+        
+      <li>Help System</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/getting_started/help.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="help-system">
+<h1>Help System<a class="headerlink" href="#help-system" title="Permalink to this headline">¶</a></h1>
+<p>Blender has a range of built-in and web-based help options.</p>
+<div class="section" id="tooltips">
+<h2>Tooltips<a class="headerlink" href="#tooltips" title="Permalink to this headline">¶</a></h2>
+<div class="figure" id="id2">
+<img alt="../_images/getting-started_help_tooltip.png" src="../_images/getting-started_help_tooltip.png" />
+<p class="caption"><span class="caption-text">Tooltip of the Renderer selector in the Info Editor.</span></p>
+</div>
+<p>When hovering the mouse cursor over a button or setting, after a few instants a tooltip appears.</p>
+<div class="section" id="elements">
+<h3>Elements<a class="headerlink" href="#elements" title="Permalink to this headline">¶</a></h3>
+<p>The context-sensitive Tooltip might contain some of these elements:</p>
+<dl class="docutils">
+<dt>Short Description</dt>
+<dd>Related details depending on the control.</dd>
+<dt>Shortcut</dt>
+<dd>A keyboard or mouse shortcut associated to the tool.</dd>
+<dt>Value</dt>
+<dd>The value of the property.</dd>
+<dt>Library</dt>
+<dd>Source file of the active object. See also <a class="reference internal" href="../files/linked_libraries.html"><span class="doc">Linked Libraries</span></a>.</dd>
+<dt>Disabled (red)</dt>
+<dd>The reason why the value is not editable.</dd>
+<dt>Python</dt>
+<dd>When <a class="reference internal" href="../editors/preferences/interface.html#prefs-interface-dev-extras"><span class="std std-ref">Developer Extras</span></a> are enabled,
+a Python expression is displayed for <a class="reference internal" href="../advanced/scripting/index.html#scripting-index"><span class="std std-ref">scripting</span></a> (usually an operator or property).</dd>
+</dl>
+</div>
+</div>
+<div class="section" id="context-sensitive-manual-access">
+<span id="help-manual-access"></span><h2>Context-Sensitive Manual Access<a class="headerlink" href="#context-sensitive-manual-access" title="Permalink to this headline">¶</a></h2>
+<div class="refbox admonition">
+<p class="first admonition-title">Reference</p>
+<table class="last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Mode:</th><td class="field-body">All modes</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Menu:</th><td class="field-body"><kbd class="kbd docutils literal notranslate">RMB</kbd>, <span class="menuselection">Online Manual</span></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Hotkey:</th><td class="field-body"><kbd class="kbd docutils literal notranslate">Alt-F1</kbd></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>You may want to access help for a tool or area from within Blender.</p>
+<p>Use the key-shortcut, or context menu to visit pages from this reference manual within Blender.
+This opens a webpage relating to the button under the cursor, supporting both tool and value buttons.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>We do not currently have 100% coverage,
+you may see an alert in the info header if some tools do not have a link to the manual.</p>
+<p class="last">Other times buttons may link to more general sections of the documentation.</p>
+</div>
+</div>
+<div class="section" id="help-menu">
+<span id="id1"></span><h2>Help Menu<a class="headerlink" href="#help-menu" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="web-links">
+<h3>Web Links<a class="headerlink" href="#web-links" title="Permalink to this headline">¶</a></h3>
+<p>The first options of this menu provide direct links to Blender-related websites:
+The same links can also be found in the <a class="reference internal" href="../interface/splash.html#splash"><span class="std std-ref">Splash Screen</span></a>.</p>
+<dl class="docutils">
+<dt><a class="reference internal" href="../index.html"><span class="doc">Manual</span></a></dt>
+<dd>This is a link to the Official Blender Manual (which you are now reading).</dd>
+<dt><a class="reference external" href="https://www.blender.org/support/tutorials">Tutorials</a></dt>
+<dd>Multiple tutorial to help you learn to use Blender.</dd>
+<dt><a class="reference external" href="https://www.blender.org/support">Support</a></dt>
+<dd>Links to various sites, providing both community and professional support.</dd>
+</dl>
+<hr class="docutils" />
+<dl class="docutils">
+<dt><a class="reference external" href="https://www.blender.org/support/user-community">User Communities</a></dt>
+<dd>Lists of many different community sites and support venues.</dd>
+<dt><a class="reference external" href="https://devtalk.blender.org">Developer Community</a></dt>
+<dd>Blender’s developer forum.</dd>
+</dl>
+<hr class="docutils" />
+<dl class="docutils">
+<dt><a class="reference external" href="https://www.blender.org/api/blender_python_api_current">Python API Reference</a></dt>
+<dd>Python application programming interface (API)</dd>
+</dl>
+<hr class="docutils" />
+<dl class="docutils">
+<dt><a class="reference external" href="https://developer.blender.org/maniphest/task/edit/form/1/">Report a Bug</a></dt>
+<dd>The Blender Bug Tracker (registration needed).</dd>
+</dl>
+</div>
+<div class="section" id="save-system-info">
+<span id="help-system-info"></span><h3>Save System Info<a class="headerlink" href="#save-system-info" title="Permalink to this headline">¶</a></h3>
+<p>This extracts system information which can be useful to include in bug reports,
+inspecting the configuration or diagnosing problems.</p>
+<p>You will be prompted to save a text file <code class="docutils literal notranslate"><span class="pre">system-info.txt</span></code>.</p>
+<p>The text file contains sections:</p>
+<dl class="docutils">
+<dt>Blender</dt>
+<dd>This section shows you the Blender version, details about the build configuration,
+and the path in which Blender is running.</dd>
+<dt>Python</dt>
+<dd>The Python version you are using, showing the paths of the Python programming language paths.</dd>
+<dt>Directories</dt>
+<dd><p class="first">Paths used for scripts, data files, presets and temporary files.</p>
+<p class="last">Those directories are configured using the <a class="reference internal" href="../editors/preferences/file_paths.html"><span class="doc">Preferences</span></a> Editor.</p>
+</dd>
+<dt>OpenGL</dt>
+<dd>This section shows the OpenGL version, the name of the manufacturer,
+and lists the capabilities of your hardware and driver.</dd>
+<dt>Enabled Add-Ons:</dt>
+<dd>Lists add-ons currently in use.</dd>
+</dl>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../interface/index.html" class="btn btn-neutral float-right" title="User Interface" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="configuration/defaults.html" class="btn btn-neutral float-left" title="Defaults" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright : This page is licensed under a CC-BY-SA 4.0 Int. License
+
+    </p>
+  </div> 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="document versions">
+<ul id="versionwrap" role="presentation">
+   <li style="float:left" role="presentation">
+		<span id="version-dropdown" class="version-btn" tabindex="0" role="button" aria-label="versions selector" aria-haspopup="true" aria-controls="version-vsnlist" aria-disabled="true">
+		2.80 
+		</span>
+		<ul id="version-vsnlist" class="version-list" role="menu" aria-labelledby="version-dropdown" aria-hidden="true">
+			<li role="presentation">Loading...</li>
+		</ul>
+	</li>
+   <li style="float:right" role="presentation">
+		<span id="lang-dropdown" class="version-btn" tabindex="0" role="button"  aria-label="language selector" aria-haspopup="true" aria-controls="version-langlist">
+			 en 
+		</span>
+		<ul id="version-langlist" class="version-list" role="menu" aria-labelledby="lang-dropdown" aria-hidden="true">
+			<li role="presentation">Loading...</li>
+		</ul>
+	</li>
+</ul>
+</div>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+  
+ 
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-1418081-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</body>
+</html>

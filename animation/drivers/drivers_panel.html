@@ -1,0 +1,535 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Drivers Panel &mdash; Blender Manual</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  
+  
+  
+    <link rel="canonical" href="https://docs.blender.org/manual/en/latest/animation/drivers/drivers_panel.html"/>
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/js/version_switch.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="search" type="application/opensearchdescription+xml"
+          title="Search within Blender Manual"
+          href="../../_static/opensearch.xml"/>
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/theme_overrides.css" type="text/css" />
+    <link rel="alternate" hreflang="en" href="https://docs.blender.org/manual/en/latest/">
+    <link rel="alternate" hreflang="de" href="https://docs.blender.org/manual/de/latest/">
+    <link rel="alternate" hreflang="es" href="https://docs.blender.org/manual/es/latest/">
+    <link rel="alternate" hreflang="fi" href="https://docs.blender.org/manual/fi/latest/">
+    <link rel="alternate" hreflang="fr" href="https://docs.blender.org/manual/fr/latest/">
+    <link rel="alternate" hreflang="it" href="https://docs.blender.org/manual/it/latest/">
+    <link rel="alternate" hreflang="ja" href="https://docs.blender.org/manual/ja/latest/">
+    <link rel="alternate" hreflang="ko" href="https://docs.blender.org/manual/ko/latest/">
+    <link rel="alternate" hreflang="nb" href="https://docs.blender.org/manual/nb/latest/">
+    <link rel="alternate" hreflang="pt" href="https://docs.blender.org/manual/pt/latest/">
+    <link rel="alternate" hreflang="ru" href="https://docs.blender.org/manual/ru/latest/">
+    <link rel="alternate" hreflang="sl" href="https://docs.blender.org/manual/sl/latest/">
+    <link rel="alternate" hreflang="sr" href="https://docs.blender.org/manual/sr/latest/">
+    <link rel="alternate" hreflang="uk" href="https://docs.blender.org/manual/uk/latest/">
+    <link rel="alternate" hreflang="vi" href="https://docs.blender.org/manual/vi/latest/">
+    <link rel="alternate" hreflang="zh-Hans" href="https://docs.blender.org/manual/zh-hans/latest/">
+    <link rel="alternate" hreflang="zh-Hant" href="https://docs.blender.org/manual/zh-hant/latest/">
+    <link rel="alternate" hreflang="x-default" href="https://docs.blender.org/manual/en/latest/">
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Workflow &amp; Examples" href="workflow_examples.html" />
+    <link rel="prev" title="Usage" href="usage.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Blender 2.80 Manual
+          
+
+          
+            
+            <img src="../../_static/blender-logo.svg" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/index.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../interface/index.html">User Interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../editors/index.html">Editors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../scene_layout/index.html">Scenes &amp; Objects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modeling/index.html">Modeling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sculpt_paint/index.html">Sculpting &amp; Painting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../grease_pencil/index.html">Grease Pencil</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Animation &amp; Rigging</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../introduction.html">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../keyframes/index.html">Keyframes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../armatures/index.html">Armatures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lattice.html">Lattice</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../constraints/index.html">Constraints</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../actions.html">Actions</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Drivers</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="usage.html">Usage</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Drivers Panel</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#driver-settings">Driver Settings</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#driver-variables">Driver Variables</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#expressions">Expressions</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="workflow_examples.html">Workflow &amp; Examples</a></li>
+<li class="toctree-l3"><a class="reference internal" href="troubleshooting.html">Troubleshooting</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../markers.html">Markers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../shape_keys/index.html">Shape Keys</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../motion_paths.html">Motion Paths</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../physics/index.html">Physics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../render/index.html">Rendering</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../compositing/index.html">Compositing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../movie_clip/index.html">Tracking &amp; Masking</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../video_editing/index.html">Video Editing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../files/index.html">Files &amp; Data System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../addons/index.html">Add-ons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../advanced/index.html">Advanced</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../troubleshooting/index.html">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../glossary/index.html">Glossary</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../about/index.html">About this Manual</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Blender 2.80 Manual</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../index.html">Animation &amp; Rigging</a> &raquo;</li>
+        
+          <li><a href="index.html">Drivers</a> &raquo;</li>
+        
+      <li>Drivers Panel</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/animation/drivers/drivers_panel.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="drivers-panel">
+<h1>Drivers Panel<a class="headerlink" href="#drivers-panel" title="Permalink to this headline">¶</a></h1>
+<div class="figure align-right" id="id1">
+<img alt="../../_images/animation_drivers_drivers-panel_panel.png" src="../../_images/animation_drivers_drivers-panel_panel.png" />
+<p class="caption"><span class="caption-text">Edit Driver popover.</span></p>
+</div>
+<div class="refbox admonition">
+<p class="first admonition-title">Reference</p>
+<table class="last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Editor:</th><td class="field-body">Graph editor</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Mode:</th><td class="field-body">Drivers</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Panel:</th><td class="field-body"><span class="menuselection">Sidebar region ‣ Drivers</span></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Hotkey:</th><td class="field-body"><kbd class="kbd docutils literal notranslate">N</kbd></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="refbox admonition">
+<p class="first admonition-title">Reference</p>
+<table class="last docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Menu:</th><td class="field-body"><span class="menuselection">Context menu ‣ Edit Driver</span></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Hotkey:</th><td class="field-body"><kbd class="kbd docutils literal notranslate">Ctrl-D</kbd></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>This panel is visible in Sidebar of the <a class="reference internal" href="../../editors/drivers_editor.html"><span class="doc">Drivers Editor</span></a>
+or as a popover when adding a driver to a property.</p>
+<p>It shows the property that is being driven, followed by a series of settings
+that determine how the driver works.</p>
+<div class="section" id="driver-settings">
+<h2>Driver Settings<a class="headerlink" href="#driver-settings" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="type">
+<h3>Type<a class="headerlink" href="#type" title="Permalink to this headline">¶</a></h3>
+<p>There are two categories of drivers:</p>
+<ul>
+<li><p class="first"><strong>Built-in functions</strong> (<em>Average</em>, <em>Sum</em>, <em>Min</em> and <em>Max</em>)</p>
+<blockquote>
+<div><p>The driven property will have the value of the average, sum, lowest or highest (respectively)
+of the values of the referenced <em>Driver Variables</em>.
+If there is only one driver variable, these functions will yield the same result.</p>
+</div></blockquote>
+</li>
+<li><p class="first"><strong>Custom</strong> (<em>Scripted Expression</em>).</p>
+<blockquote>
+<div><p>An arbitrary Python expression that can refer to the <em>Driver Variables</em> by name. See <a class="reference internal" href="#expressions">Expressions</a>.</p>
+</div></blockquote>
+</li>
+</ul>
+</div>
+<div class="section" id="driver-value">
+<h3>Driver Value<a class="headerlink" href="#driver-value" title="Permalink to this headline">¶</a></h3>
+<p>The current result of the driver setup. Useful for debug purposes.</p>
+</div>
+<div class="section" id="variables">
+<h3>Variables<a class="headerlink" href="#variables" title="Permalink to this headline">¶</a></h3>
+<p>See  <a class="reference internal" href="#driver-variables">Driver Variables</a>.</p>
+</div>
+<div class="section" id="update-dependencies">
+<h3>Update Dependencies<a class="headerlink" href="#update-dependencies" title="Permalink to this headline">¶</a></h3>
+<p>Forces an update for the Driver Value dependencies.</p>
+</div>
+<div class="section" id="show-in-drivers-editor">
+<h3>Show in Drivers Editor<a class="headerlink" href="#show-in-drivers-editor" title="Permalink to this headline">¶</a></h3>
+<p>Opens the fully featured <a class="reference internal" href="../../editors/drivers_editor.html"><span class="doc">Drivers Editor</span></a>.
+This button only appears in the popover version of the Drivers panel.</p>
+</div>
+</div>
+<div class="section" id="driver-variables">
+<span id="drivers-variables"></span><h2>Driver Variables<a class="headerlink" href="#driver-variables" title="Permalink to this headline">¶</a></h2>
+<p>Variables are references to properties, transformation channels, or the result of a comparison
+between transformations of two objects.</p>
+<p>Drivers should access object data via <em>Driver Variables</em>, rather than direct references in the Python
+expression, in order for dependencies to be correctly tracked.</p>
+<div class="figure align-right" id="id2">
+<img alt="../../_images/animation_drivers_drivers-panel_add-variable.png" src="../../_images/animation_drivers_drivers-panel_add-variable.png" />
+<p class="caption"><span class="caption-text">Add, Copy, Paste buttons.</span></p>
+</div>
+<dl class="docutils">
+<dt>Add Input Variable</dt>
+<dd>Adds a new Driver Variable.</dd>
+<dt>Copy/Paste Variables</dt>
+<dd>Copies the current variable list so it can be pasted into another driver’s variable list.</dd>
+</dl>
+<table border="1" class="docutils">
+<colgroup>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><div class="first last figure" id="id3">
+<img alt="../../_images/animation_drivers_drivers-panel_single-property.png" src="../../_images/animation_drivers_drivers-panel_single-property.png" />
+<p class="caption"><span class="caption-text">Single property.</span></p>
+</div>
+</td>
+<td><div class="first last figure" id="id4">
+<img alt="../../_images/animation_drivers_drivers-panel_transform-channel2.png" src="../../_images/animation_drivers_drivers-panel_transform-channel2.png" />
+<p class="caption"><span class="caption-text">Transform channel.</span></p>
+</div>
+</td>
+<td><div class="first last figure" id="id5">
+<img alt="../../_images/animation_drivers_drivers-panel_distance.png" src="../../_images/animation_drivers_drivers-panel_distance.png" />
+<p class="caption"><span class="caption-text">Distance.</span></p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="docutils">
+<dt>Name</dt>
+<dd>Name for use in scripted expressions.
+The name must start with a letter, and only contain letters, digits, or <code class="docutils literal notranslate"><span class="pre">_</span></code>.</dd>
+<dt>Variable Type</dt>
+<dd><p class="first">The type of variable to use.</p>
+<dl class="last docutils">
+<dt>Single Property</dt>
+<dd><p class="first">Retrieves the value of a RNA property, specified by a data-block reference and a path string.</p>
+<p>In case of transform properties, this will return the exact value of the UI property,
+while Transform Channel will take parenting and/or constraints into account as needed.</p>
+<p>See also <a class="reference internal" href="../../files/data_blocks.html#files-data-blocks-custom-properties"><span class="std std-ref">Custom Properties</span></a>.</p>
+<dl class="docutils">
+<dt>ID Type</dt>
+<dd>The ID-block type. For example: Key, Image, Object, Material.</dd>
+<dt>ID</dt>
+<dd>The ID of the ID-block type. For example: “Material.001”.</dd>
+<dt>RNA Path</dt>
+<dd>The RNA name of the property, based on a subset of Python attribute access syntax.
+For example: <code class="docutils literal notranslate"><span class="pre">location.x</span></code> or <code class="docutils literal notranslate"><span class="pre">location[0]</span></code> for the raw X location value, or
+<code class="docutils literal notranslate"><span class="pre">[&quot;prop_name&quot;]</span></code> for a custom property.</dd>
+</dl>
+<div class="last admonition tip">
+<p class="first admonition-title">Tip</p>
+<p class="last">The easiest way to create a variable of this type is to use the
+<a class="reference internal" href="usage.html#drivers-copy-as-new"><span class="std std-ref">Copy As New Driver</span></a>
+context menu option of the input property, and paste the result
+into the driver via <a class="reference internal" href="#drivers-variables"><span class="std std-ref">Paste Driver Variables</span></a>.</p>
+</div>
+</dd>
+<dt>Transform Channel</dt>
+<dd><p class="first">Retrieves the value of a Transform channel from an object or bone.</p>
+<dl class="last docutils">
+<dt>ID</dt>
+<dd>ID of the object. For example: Cube, Armature, Camera.</dd>
+<dt>Bone</dt>
+<dd>ID of the Armature bone. For example: “Bone”, “Bone.002”, “Arm.r”.
+This option is for armatures.</dd>
+<dt>Type</dt>
+<dd><p class="first">For example, X Location, X Rotation, X Scale.</p>
+<p class="last">The <em>Average Scale</em> option retrieves the combined scale value,
+computed as the cubic root of the total change in volume.
+Unlike <em>X/Y/Z Scale</em>, this value can be negative if the object is flipped by negative scaling.</p>
+</dd>
+<dt>Space</dt>
+<dd>World Space, Transform Space, Local Space.</dd>
+</dl>
+</dd>
+<dt>Rotational Difference</dt>
+<dd>Provides the value of the rotational difference between two objects or bones, in radians.</dd>
+<dt>Distance</dt>
+<dd>Provides the value of the distance between two objects or bones.</dd>
+</dl>
+</dd>
+<dt>Value</dt>
+<dd>Shows the value of the variable.</dd>
+</dl>
+</div>
+<div class="section" id="expressions">
+<h2>Expressions<a class="headerlink" href="#expressions" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt>Expression</dt>
+<dd><p class="first">A text field where you can enter an arbitrary Python expression that refers to
+<em>Driver Variables</em> by their names.</p>
+<p>The expression has access to a set of standard constants and math functions provided
+in the <em>Driver Namespace</em>. For an example of adding a custom function to the namespace,
+see the <a class="reference internal" href="workflow_examples.html#driver-namespace"><span class="std std-ref">driver namespace example</span></a>.</p>
+<p class="last">For performance reasons it is best to use the <a class="reference internal" href="#simple-expressions">Simple Expressions</a> subset as much as possible.</p>
+</dd>
+<dt>Use Self</dt>
+<dd><p class="first">If this option is enabled, the variable <code class="docutils literal notranslate"><span class="pre">self</span></code> can be used for drivers to reference their own data.
+Useful for objects and bones to avoid having creating a <em>Driver Variable</em> pointing to itself.</p>
+<p>Example: <code class="docutils literal notranslate"><span class="pre">self.location.x</span></code> applied to the Y rotation property of the same object
+will make the object tumble when moving.</p>
+<p class="last">Note that dependencies for properties accessed via <code class="docutils literal notranslate"><span class="pre">self</span></code> may not be fully tracked.</p>
+</dd>
+</dl>
+<div class="section" id="simple-expressions">
+<span id="drivers-simple-expressions"></span><h3>Simple Expressions<a class="headerlink" href="#simple-expressions" title="Permalink to this headline">¶</a></h3>
+<p>Blender can evaluate a useful subset of Python driver expressions directly,
+which significantly improves performance, especially on multi-core systems.
+To take advantage of this, the driver expression must only use the following features:</p>
+<dl class="docutils">
+<dt>Variable Names</dt>
+<dd>Use only ASCII characters.</dd>
+<dt>Literals</dt>
+<dd>Floating point and decimal integer.</dd>
+<dt>Globals</dt>
+<dd><code class="docutils literal notranslate"><span class="pre">frame</span></code></dd>
+<dt>Constants</dt>
+<dd><code class="docutils literal notranslate"><span class="pre">pi</span></code>, <code class="docutils literal notranslate"><span class="pre">True</span></code>, <code class="docutils literal notranslate"><span class="pre">False</span></code></dd>
+<dt>Operators</dt>
+<dd><code class="docutils literal notranslate"><span class="pre">+</span></code>, <code class="docutils literal notranslate"><span class="pre">-</span></code>, <code class="docutils literal notranslate"><span class="pre">*</span></code>, <code class="docutils literal notranslate"><span class="pre">/</span></code>,
+<code class="docutils literal notranslate"><span class="pre">==</span></code>, <code class="docutils literal notranslate"><span class="pre">!=</span></code>, <code class="docutils literal notranslate"><span class="pre">&lt;</span></code>, <code class="docutils literal notranslate"><span class="pre">&lt;=</span></code>, <code class="docutils literal notranslate"><span class="pre">&gt;</span></code>, <code class="docutils literal notranslate"><span class="pre">&gt;=</span></code>,
+<code class="docutils literal notranslate"><span class="pre">and</span></code>, <code class="docutils literal notranslate"><span class="pre">or</span></code>, <code class="docutils literal notranslate"><span class="pre">not</span></code>, conditional operator/ ternary if</dd>
+<dt>Functions</dt>
+<dd><code class="docutils literal notranslate"><span class="pre">min</span></code>, <code class="docutils literal notranslate"><span class="pre">max</span></code>, <code class="docutils literal notranslate"><span class="pre">radians</span></code>, <code class="docutils literal notranslate"><span class="pre">degrees</span></code>,
+<code class="docutils literal notranslate"><span class="pre">abs</span></code>, <code class="docutils literal notranslate"><span class="pre">fabs</span></code>, <code class="docutils literal notranslate"><span class="pre">floor</span></code>, <code class="docutils literal notranslate"><span class="pre">ceil</span></code>, <code class="docutils literal notranslate"><span class="pre">trunc</span></code>, <code class="docutils literal notranslate"><span class="pre">int</span></code>,
+<code class="docutils literal notranslate"><span class="pre">sin</span></code>, <code class="docutils literal notranslate"><span class="pre">cos</span></code>, <code class="docutils literal notranslate"><span class="pre">tan</span></code>, <code class="docutils literal notranslate"><span class="pre">asin</span></code>, <code class="docutils literal notranslate"><span class="pre">acos</span></code>, <code class="docutils literal notranslate"><span class="pre">atan</span></code>, <code class="docutils literal notranslate"><span class="pre">atan2</span></code>,
+<code class="docutils literal notranslate"><span class="pre">exp</span></code>, <code class="docutils literal notranslate"><span class="pre">log</span></code>, <code class="docutils literal notranslate"><span class="pre">sqrt</span></code>, <code class="docutils literal notranslate"><span class="pre">pow</span></code>, <code class="docutils literal notranslate"><span class="pre">fmod</span></code></dd>
+</dl>
+<p>Simple expressions are evaluated even when Python script execution is disabled.</p>
+<p>When an expression outside of this subset is used, Blender displays a “Slow Python expression”
+warning. However, as long as the majority of drivers use simple expressions, using a complex
+expression in select few is OK.</p>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<ul class="last simple">
+<li><a class="reference internal" href="../../advanced/scripting/index.html#scripting-index"><span class="std std-ref">Extending Blender with Python</span></a>.</li>
+<li><a class="reference external" href="https://www.python.org">Python</a> and its <a class="reference external" href="https://docs.python.org/">documentation</a>.</li>
+<li><a class="reference external" href="http://functions.wolfram.com/">functions.wolfram.com</a>.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="workflow_examples.html" class="btn btn-neutral float-right" title="Workflow &amp; Examples" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="usage.html" class="btn btn-neutral float-left" title="Usage" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright : This page is licensed under a CC-BY-SA 4.0 Int. License
+
+    </p>
+  </div> 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="document versions">
+<ul id="versionwrap" role="presentation">
+   <li style="float:left" role="presentation">
+		<span id="version-dropdown" class="version-btn" tabindex="0" role="button" aria-label="versions selector" aria-haspopup="true" aria-controls="version-vsnlist" aria-disabled="true">
+		2.80 
+		</span>
+		<ul id="version-vsnlist" class="version-list" role="menu" aria-labelledby="version-dropdown" aria-hidden="true">
+			<li role="presentation">Loading...</li>
+		</ul>
+	</li>
+   <li style="float:right" role="presentation">
+		<span id="lang-dropdown" class="version-btn" tabindex="0" role="button"  aria-label="language selector" aria-haspopup="true" aria-controls="version-langlist">
+			 en 
+		</span>
+		<ul id="version-langlist" class="version-list" role="menu" aria-labelledby="lang-dropdown" aria-hidden="true">
+			<li role="presentation">Loading...</li>
+		</ul>
+	</li>
+</ul>
+</div>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+  
+ 
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-1418081-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</body>
+</html>
